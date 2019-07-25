@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Para Mostrar y Ocultar vincluir el plugin jQuery Migrate -->
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- varia el width para que ocupe el ancho deseado 50% ocupara la mitad -->
+  </head>
+  <body>
+    <div class="container" id="logo">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1>Sistema de Registro</h1>
+				</div>
+			</div>
+		</div>
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#acolapsar">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="acolapsar">
+          <ul class="nav navbar-nav">
+            <li><a href="inicio.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-folder-close"></span>Productos <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="registrar_producto.html">Registrar Productos</a></li>
+                <li><a href="acciones_productos.html">Acciones con Productos</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cloud"></span>Servicios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="registrar_servicio.html">Registrar Servicios</a></li>
+                <li><a href="acciones_servicios.html">Acciones con Servicios</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Cuerpo -->
+    <div class="row">
+      <!--Columna Principal -->
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+        <article>
+          <h1>Inicio</h1>
+        </article>
+        <article>
+          <h2>Titulo de mi primer Articulo</h2></br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor in libero id lacinia. Integer dapibus tortor ex, vel porttitor eros rhoncus eu. Pellentesque rhoncus justo ac suscipit posuere. Etiam maximus libero non magna cursus ultricies vel a est. Mauris vestibulum odio accumsan arcu aliquam, a hendrerit lacus efficitur. Nunc bibendum metus sit amet est fringilla, sed ornare ante rhoncus. Quisque a tempus sem, sit amet condimentum mauris. Vivamus tempor neque vitae orci tempus luctus. Donec volutpat, ex eget tempus viverra, risus velit tincidunt felis, nec pretium nulla lectus eget ligula.</p>
+          </br>
+        </article>
+      </div>
+    </div>
+    <!--Fin Cuerpo -->
+  </body>
+</html>

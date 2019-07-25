@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- varia el width para que ocupe el ancho deseado 50% ocupara la mitad -->
+  </head>
+  <body>
+    <div class="container" id="logo">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1>Sistema de Registro</h1>
+				</div>
+			</div>
+		</div>
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#acolapsar">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="acolapsar">
+          <ul class="nav navbar-nav">
+            <li><a href="inicio.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-folder-close"></span>Productos <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="registrar_producto.html">Registrar Productos</a></li>
+                <li><a href="acciones_productos.html">Acciones con Productos</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cloud"></span>Servicios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="registrar_servicio.html">Registrar Servicios</a></li>
+                <li><a href="acciones_servicios.html">Acciones con Servicios</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Cuerpo -->
+    <div class="row">
+      <!--Columna Principal -->
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+        <article>
+          <h1>Registrar Servicio</h1>
+        </article>
+        <article>
+          <div class=form_registro>
+          <form name="formulario_registro" method="post" action="registro_servicio.php">
+            <label for="nombre_servicio">Nombre del Servicio: </label>
+            <input type="text" name="nombre_servicio" id="nombre_servicio" placeholder="Nombre del Servicio">
+            <label for="precio_servicio">Precio: </label>
+            <input type="text" name="precio_servicio" id="precio_servicio" placeholder="Precio del Servicio">
+            <label for="descripcion_servicio">Descripción del Servicio </label>
+            <input type="text" name="descripcion_servicio" id="descripcion_servicio" placeholder="Descripción">
+            <input type="submit" value="Agregar Servicio" class="btn_reg">
+          </form>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!--Fin Cuerpo -->
+  </body>
+</html>
